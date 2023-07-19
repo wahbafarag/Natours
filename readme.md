@@ -55,4 +55,26 @@ Tour Booking app Built with Nodejs ,Expressjs ,MongoDB ,MongoDB Atlas ,Mongooose
      - Admins can get, update, delete bookings 
 
   
-AND MUCH MORE
+## HOW TO 
+
+### Book a tour
+* Login to the site
+* Search for tours that you want to book
+* Book a tour
+* Proceed to the payment checkout page
+* Enter the card details (Test Mood):
+  ```
+  - Card No. : 4242 4242 4242 4242
+  - Expiry date: 02 / 22
+  - CVV: 222
+  ```
+* Finished!
+
+
+### Manage your booking
+
+* Check the tour you have booked in "Manage Booking" page in your user settings. You'll be automatically redirected to this
+  page after you have completed the booking.
+
+### Update your profile
+* You can update your own username, profile photo, email and password.
