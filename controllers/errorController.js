@@ -11,7 +11,7 @@ const errorHandlerMiddleware = (err, req, res, next) => {
     customError.message = `Invalid Data : ${Object.values(err.errors)
       .map((item) => item.message)
       .join('. ')}`;
-    console.log(err);
+    //console.log(err);
   }
 
   if (err.code && err.code === 11000) {
@@ -20,32 +20,32 @@ const errorHandlerMiddleware = (err, req, res, next) => {
     )} ,Try another one`;
     customError.statusCode = 400;
     customError.status = 'fail';
-    console.log(err);
+    //console.log(err);
   }
   if (err.code && err.code === 'PUG:UNEXPECTED_TEXT') {
     customError.message = `Page Can not be Rendered`;
     customError.statusCode = 400;
     customError.status = 'fail';
-    console.log(err);
+    //console.log(err);
   }
 
   if (err.name === 'CastError') {
     customError.message = `Invalid ${err.path} : ${err.value}`;
     customError.statusCode = 400;
     customError.status = 'fail';
-    console.log(err);
+    //console.log(err);
   }
   if (err.name === 'JsonWebTokenError') {
     customError.message = 'Invalid Token ,please login';
     customError.statusCode = 401;
     customError.status = 'fail';
-    console.log(err);
+    //console.log(err);
   }
   if (err.name === 'TokenExpiredError') {
     customError.message = 'Your token has expired, Login again';
     customError.statusCode = 401;
     customError.status = 'fail';
-    console.log(err);
+    //console.log(err);
   }
 
   if (req.originalUrl.startsWith('/api')) {
