@@ -16,9 +16,10 @@ Tour Booking app Built with Nodejs ,Expressjs ,MongoDB ,MongoDB Atlas ,Mongooose
 ### More Features 
 
 * Tours :
-  - Admin and Tour Guide can create, update, delete, get single tour and all tours
-  - Admin can know Montly plans and tours stats
-  - usee and normal tour guide can get
+  -Admin "
+      - Admin and Tour Guide can create, update, delete, get single tour and all tours
+      - Admin can know Montly plans and tours stats
+  - user and normal tour guide can get
       - Top  Cheapest Tours , Get Tours Within a Raduis , Get Distances to tours from point
   
 
