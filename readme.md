@@ -30,11 +30,11 @@ Tour Booking app Built with Nodejs ,Expressjs ,MongoDB ,MongoDB Atlas ,Mongooose
   - Sending Welcode Email to Users when they Signup
   - Sending Emails to the user With a token to reset his password
  
-  * Users :
-    - Users :
-      - User can create, update, view, Deactivate his account
-    - Admins :
-      - Create, Get, Update, Delete
+* Users :
+  - Users :
+    - User can create, update, view, Deactivate his account
+  - Admins :
+    - Create, Get, Update, Delete
      
 * Reviews :
   - Users :
