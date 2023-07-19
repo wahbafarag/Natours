@@ -6,7 +6,7 @@ dotenv.config({ path: path.join(__dirname, 'config.env') });
 const app = require('./app');
 
 mongoose
-  .connect('mongodb://localhost:27017/new-natgiours', {
+  .connect(process.env.MONGO_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
