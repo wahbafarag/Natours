@@ -22,7 +22,37 @@ Tour Booking app Built with Nodejs ,Expressjs ,MongoDB ,MongoDB Atlas ,Mongooose
   - User And Guide :
     - Top  Cheapest Tours , Get Tours Within a Raduis , Get Distances to tours from point
 
+* Authentication
+  - Login, Signup and Logout
+  - Forget, Update, Reset Password
 
+* Emails :
+  - Sending Welcode Email to Users when they Signup
+  - Sending Emails to the user With a token to reset his password
+ 
+  * Users :
+    - Users :
+      - User can create, update, view, Deactivate his account
+    - Admins :
+      - Create, Get, Update, Delete
+     
+* Reviews :
+  - Users :
+    - Only users can review our tours (admins, lead guides and usual guides can NOT review)
+    - User can update his review
+    - User can review Just ONCE on a single tour
+      
+  - Admins :
+    - Can get all and single review
+    - Can get all reviews and single review for particular tour
+
+   
+* Bookings :
+   - Users :
+     - User can book as much tours as he want using Stripe , No Deuplicated
+       
+   - Admins:
+     - Admins can get, update, delete bookings 
 
   
 
