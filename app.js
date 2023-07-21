@@ -76,12 +76,7 @@ app.use(compression());
 // };
 // app.use(cors(corsOptions));
 
-app.use(
-  cors({
-    origin: 'http://localhost:3000',
-    credentials: true,
-  })
-);
+app.use(cors());
 app.options('*', cors());
 app.use(cookieParser());
 
