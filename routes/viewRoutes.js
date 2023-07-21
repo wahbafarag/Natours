@@ -3,11 +3,10 @@ const router = express.Router();
 
 const authControllers = require('../controllers/authControllers');
 const viewControllers = require('../controllers/viewControllers');
-const bookingControllers = require('../controllers/bookingControllers');
 
 router.get(
   '/',
-  // bookingControllers.createBookingCheckout,
+
   authControllers.isLoggedIn,
   viewControllers.getOverview
 );
@@ -20,10 +19,10 @@ router.get(
   viewControllers.getMyTours
 );
 
-// router.post(
-//   '/submit-user-data',
-//   authControllers.protectRoutes,
-//   viewControllers.updateUserData
-// );
+router.post(
+  '/submit-user-data',
+  authControllers.protectRoutes,
+  viewControllers.updateUserData
+);
 
 module.exports = router;
