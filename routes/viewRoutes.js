@@ -7,14 +7,18 @@ const bookingControllers = require('../controllers/bookingControllers');
 
 router.get(
   '/',
-  bookingControllers.createBookingCheckout,
+  // bookingControllers.createBookingCheckout,
   authControllers.isLoggedIn,
   viewControllers.getOverview
 );
 router.get('/tour/:slug', authControllers.isLoggedIn, viewControllers.getTour);
 router.get('/login', authControllers.isLoggedIn, viewControllers.getLoginForm);
 router.get('/me', authControllers.protectRoutes, viewControllers.getAccount);
-router.get('/my-tours', authControllers.protectRoutes, viewControllers.getMyTours);
+router.get(
+  '/my-tours',
+  authControllers.protectRoutes,
+  viewControllers.getMyTours
+);
 
 // router.post(
 //   '/submit-user-data',
