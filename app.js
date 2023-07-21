@@ -18,10 +18,7 @@ const viewRouter = require('./routes/viewRoutes');
 const bookingRouter = require('./routes/bookingRoutes');
 const bookingController = require('./controllers/bookingControllers');
 const app = express();
-<<<<<<< HEAD
 
-=======
->>>>>>> ce599eb3e034c4b82ebb7158da11efa20c58afc6
 app.enable('trust proxy');
 app.set('view engine', 'pug');
 app.set('views', path.join(__dirname, 'views'));
@@ -80,14 +77,14 @@ app.use(
 );
 app.use(compression());
 
-<<<<<<< HEAD
+
 app.use(
   cors({
     origin: 'http://localhost:3000',
     credentials: true,
   })
 );
-=======
+
 // const corsOptions = {
 //   origin: 'http://localhost:3000',
 //   credentials: true, //access-control-allow-credentials:true
@@ -96,7 +93,7 @@ app.use(
 // app.use(cors(corsOptions));
 
 app.use(cors());
->>>>>>> ce599eb3e034c4b82ebb7158da11efa20c58afc6
+
 app.options('*', cors());
 app.use(cookieParser());
 
