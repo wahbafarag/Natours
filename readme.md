@@ -5,7 +5,6 @@ Tour Booking app Built with Nodejs ,Expressjs ,MongoDB ,MongoDB Atlas ,Mongooose
 ### Demo
 link : https://drive.google.com/file/d/1Xxqa9G3tm9V1bCkBdw5xUclszRSqng_p/view?usp=sharing
 
-### Live Demo : https://natours-with-wahba.onrender.com/
 
 ### Key Features
 
