@@ -82,6 +82,7 @@ app.use(
     credentials: true,
   })
 );
+app.options('*', cors());
 app.use(cookieParser());
 
 // 3) ROUTES
