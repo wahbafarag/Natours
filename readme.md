@@ -2,9 +2,6 @@
 Tour Booking app Built with Nodejs ,Expressjs ,MongoDB ,MongoDB Atlas ,Mongooose ,Pug ,Parceljs ,Mapbox ,Stripe ,Mailtrap and SendGrid
 
 
-### Demo
-link : https://drive.google.com/file/d/1Xxqa9G3tm9V1bCkBdw5xUclszRSqng_p/view?usp=sharing
-
 
 ### Key Features
 
